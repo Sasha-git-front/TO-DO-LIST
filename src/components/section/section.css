@@ -1,0 +1,7 @@
+.to-do-list{
+    background-color: white;
+    height:100vh;
+    width:40%;
+    margin:0 auto;
+    overflow: auto;
+}

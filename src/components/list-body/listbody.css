@@ -1,0 +1,21 @@
+.listbody {
+    font-size: 20px;
+    padding: 3px 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.listbody span {
+    width: 70%;
+}
+
+.listbody .listbody_img {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listbody_img img {
+    width: 17%;
+}
