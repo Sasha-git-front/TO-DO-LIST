@@ -19,7 +19,7 @@ function ListBody({ dates, deleteData, editData }) {
                         </div>
                     )
                 })
-                : <div>Ваш список справ📋🥖🍅🏃</div>
+                : <div className ='listbody-todo'>Ваш список справ📋🥖🍅🏃</div>
             }
         </>
     );

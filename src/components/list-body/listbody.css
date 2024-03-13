@@ -5,9 +5,19 @@
     display: flex;
     align-items: center;
 }
+.listbody-todo{
+    color:#9153aa;
+    margin: 0 7px;
+    font-weight:700;
+    font-size:x-large;
+}
 
 .listbody span {
     width: 70%;
+    color:#9153aa;
+    padding: 6px 1px;
+    font-weight:700;
+    font-size:x-large;
 }
 
 .listbody .listbody_img {
@@ -17,7 +27,7 @@
 }
 
 .listbody_img img {
-    width: 17%;
+    width: 20%;
 }
 .listbody_img img:hover{
     cursor: pointer;

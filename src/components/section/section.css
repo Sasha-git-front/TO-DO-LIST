@@ -6,13 +6,7 @@
     overflow: auto;
     border-radius:10px;
 }
-.to-do-list :last-child{
-    color:#9153aa;
-    padding: 6px 9px;
-    font-weight:700;
-    font-size:x-large;
 
-}
 /* Додайте вашому CSS файлу */
 @media screen and (max-width: 700px) {
     /* Стилі для екранів з шириною менше 700px */
