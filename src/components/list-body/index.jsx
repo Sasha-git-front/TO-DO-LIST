@@ -13,13 +13,13 @@ function ListBody({ dates, deleteData, editData }) {
                         <div className="listbody" key={i}>
                             <span>{`${i + 1}. ${data}`}</span>
                             <div className="listbody_img">
-                                <img src={editImage} alt="edit" onClick={() => { editData(data) }}></img>
+                                <img src={editImage} alt="edit" onClick={() => {editData(data,i) }}></img>
                                 <img src={deleteImage} alt="Delete" onClick={() => deleteData(data, i)} />
                             </div>
                         </div>
                     )
                 })
-                : <div>NO DATA</div>
+                : <div>Ваш список справ📋🥖🍅🏃</div>
             }
         </>
     );

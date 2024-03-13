@@ -1,7 +1,29 @@
 .to-do-list{
     background-color: white;
     height:100vh;
-    width:40%;
+    width:45%;
     margin:0 auto;
     overflow: auto;
+    border-radius:10px;
 }
+.to-do-list :last-child{
+    color:#9153aa;
+    padding: 6px 9px;
+    font-weight:700;
+    font-size:x-large;
+
+}
+/* Додайте вашому CSS файлу */
+@media screen and (max-width: 700px) {
+    /* Стилі для екранів з шириною менше 700px */
+    .to-do-list {
+        width:60%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    
+    .to-do-list {
+        width:95%;
+    }
+  }
+  

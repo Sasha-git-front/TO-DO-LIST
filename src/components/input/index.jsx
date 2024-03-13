@@ -1,27 +1,42 @@
-import React from "react"
+
+import React, { useState, useEffect } from "react";
 import './input.css'
 
 
-function Input({ inputData }) {
-    let data = '';
-    let input = '';
+function Input({ inputData, editIndex, editText }) {
+    //let data = '';
+    //let input = '';
+    const [data, setData] = useState('');
+    const [input, setInput] = useState('');
+
+    useEffect(() => {
+        if (editIndex !== null) {
+            setData(editText);
+        }
+    }, [editIndex, editText]);
+
     return (
         <>
-            <input className="new-task" type='text' placeholder='Add New Todo'
+            <input className="new-task"
+                type='text'
+                placeholder='Add New Todo'
+                value={data}
                 onChange={(e) => {
-                    data = e.target.value;
-                    input = e.target;
+                    setData(e.target.value);
+                    setInput(e.target);
                 }}
 
             />
             <button className='btn' onClick={() => {
-                if(data){
+                if (data) {
                     inputData(data, input)
-                }else{
+                    setData('')
+                } else {
                     console.log("not data")
                 }
-                
-            }}>Зберегти</button>
+
+            }}>{editIndex !== null ? 'Змінити' : 'Зберегти'}
+            </button>
         </>
 
     )

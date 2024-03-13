@@ -19,3 +19,6 @@
 .listbody_img img {
     width: 17%;
 }
+.listbody_img img:hover{
+    cursor: pointer;
+}
